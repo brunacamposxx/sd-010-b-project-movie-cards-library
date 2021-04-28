@@ -9,8 +9,7 @@ describe('15 - Crie um componente `<App />`', () => {
     wrapper = shallow(<App />);
     expect(wrapper.find('Header').length).toEqual(1);
   });
-}); // esse comentário fiz somente pra ver se aparece o meu Pull Request lá no github. Logo em seguida irei apagar este comentário.
-
+});
 describe('16 - Renderize `<MovieList />` dentro do componente `<App />`', () => {
   let wrapper;
   it('Renderize `<MovieList />` dentro do componente `<App />`', () => {
