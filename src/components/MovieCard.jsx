@@ -4,32 +4,33 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    const
-      {
-        title,
-        subtitle,
-        imagePath,
-        storyLine,
-        rating,
-      } = this.props.movie;
+    const { movie: {
+      title,
+      subtitle,
+      imagePath,
+      storyLine,
+      rating,
+    } } = this.props;
     return (
       <section>
-        <img src={ imagePath } alt={ title }/>
+        <img src={ imagePath } alt={ title } />
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
-        <span>{ storyLine }</span>
-        <Rating type={ rating } />
+        <p>{ storyLine }</p>
+        <Rating rating={ rating } />
       </section>
     );
   }
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  imagePath: PropTypes.string.isRequired,
-  storyLine: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
+  movie: PropTypes.exact({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    imagePath: PropTypes.string.isRequired,
+    storyLine: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default MovieCard;
