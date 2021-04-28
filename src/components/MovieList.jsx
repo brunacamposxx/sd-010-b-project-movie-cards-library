@@ -15,6 +15,9 @@ MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
       imagePath: PropTypes.string,
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      storyline: PropTypes.string,
     }),
   ).isRequired,
 };
