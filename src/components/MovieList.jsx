@@ -4,7 +4,7 @@ import React from 'react';
 class MovieList extends React.component {
   render() {
     return (
-      <p />
+      <section />
     );
   }
 }
