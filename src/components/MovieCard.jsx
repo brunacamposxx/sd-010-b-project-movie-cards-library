@@ -12,17 +12,17 @@ export class MovieCard extends Component {
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
       </div>
-    )
-  };
+    );
+  }
 }
 
-MovieCard.PropTypes = {
+MovieCard.propTypes = {
   movies: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     imagePath: PropTypes.string,
     storyline: PropTypes.string,
-  })
+  }).isRequired,
 };
 
 export default MovieCard;
