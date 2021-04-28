@@ -2,8 +2,10 @@
 import React, { Component } from 'react';
 
 class MovieCard extends Component {
-  render () {
-    return ();
+  render() {
+    return (
+      <div> Oi </div>
+    );
   }
 }
 
