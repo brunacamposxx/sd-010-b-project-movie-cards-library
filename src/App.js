@@ -14,8 +14,8 @@ function App() {
   );
 }
 
-App.propType = {
-  movies: PropTypes.array,
+App.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default App;
