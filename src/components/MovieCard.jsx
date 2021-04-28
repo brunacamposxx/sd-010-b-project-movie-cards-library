@@ -15,13 +15,13 @@ class MovieCard extends React.Component {
     } } = this.props;
     return (
       <section className="movie-card">
-        <img className="movie-card-image" src={ imagePath } alt={ title } />
         <section className="movie-card-body">
+          <img className="movie-card-image" src={ imagePath } alt={ title } />
           <h4 className="movie-card-title">{ title }</h4>
           <h5 className="movie-card-subtitle">{ subtitle }</h5>
           <p className="movie-card-storyline">{ storyline }</p>
         </section>
-        <Rating className="movie-card-rating" rating={ rating } />
+        <Rating rating={ rating } />
       </section>
     );
   }
@@ -29,7 +29,7 @@ class MovieCard extends React.Component {
 
 MovieCard.propTypes = {
   // FONTE =  https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
-  movie: PropTypes.exact({
+  movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     imagePath: PropTypes.string.isRequired,
