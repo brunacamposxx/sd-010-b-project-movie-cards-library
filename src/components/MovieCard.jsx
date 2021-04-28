@@ -24,6 +24,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
+  // FONTE =  https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
   movie: PropTypes.exact({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
