@@ -7,8 +7,10 @@ class MovieList extends React.Component {
     return (
       <section className="movie-list">
         { movies.map((movie) => {
-          const { title, subtitle, storyline, imagePath, rating } = movie;
-          return <MovieCard key="id" title={ title } subtitle={ subtitle } storyline={ storyline } imagePath={ imagePath } rating={ rating } />;
+          const { title, storyline, imagePath } = movie;
+          return (
+            <MovieCard key={ title } storyline={ storyline } imagePath={ imagePath } />
+          );
         })}
       </section>
     );
@@ -16,12 +18,3 @@ class MovieList extends React.Component {
 }
 
 export default MovieList;
-
-// (
-//   <section className="movie-list">
-//     { movies.map((movie) => {
-//       const { title, subtitle, storyline, imagePath, rating } = movie;
-//       return <MovieCard key="id" title={ title } subtitle={ subtitle } storyline={ storyline } imagePath={ imagePath } rating={ rating } />;
-//     })}
-
-//   </section>);
