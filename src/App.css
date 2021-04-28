@@ -5,9 +5,9 @@ body {
 }
 
 .movie-card-header {
-  color: white;
   align-items: center;
   background-color: #343a40;
+  color: white;
   display: flex;
   height: 100px;
   justify-content: center;
