@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
-// import "./style.css";
-// import "./function.js";
-
-const movieList = ({ titulo, subTitulo }) => (
-  <section className="nome-da-classe">
-    <h1>{titulo}</h1>
-    <p>{subTitulo}</p>
-  </section>
-);
+import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
+    const { movies } = this.props;
+    console.log(movies);
     return (
-      movieList({ titulo: 'Título', subTitulo: 'Sub-Titulo' })
+      <MovieCard />
     );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf({ }),
+};
+
+MovieList.defaultProps = {
+  movies: { },
+};
 
 export default MovieList;
