@@ -3,13 +3,13 @@ import './App.css';
 import MovieList from './components/MovieList';
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
       <div className="App">
         <MovieList />
       </div>
     );
-  } 
+  }
 }
 
 export default App;
