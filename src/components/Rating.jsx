@@ -10,8 +10,13 @@ class Rating extends React.Component {
   }
 }
 
+// Documentation on Github to end the false undefined warning
+Rating.defaultProps = {
+  rating: 2,
+};
+
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
 };
 
 export default Rating;
