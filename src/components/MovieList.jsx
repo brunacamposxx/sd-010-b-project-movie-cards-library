@@ -6,9 +6,9 @@ import movies from '../data';
 class MovieList extends React.Component {
   render() {
     return (
-      <movielist>
-        {movies.map((movie, index) => (<MovieCard key={ index } />))}
-      </movielist>
+      <div>
+        {movies.map((movie) => (<MovieCard key={ movie.title } />))}
+      </div>
     );
   }
 }
