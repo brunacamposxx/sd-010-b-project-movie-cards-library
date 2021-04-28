@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends Component {
@@ -11,5 +12,16 @@ class MovieList extends Component {
     );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(
+    propTypes.shape({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      rating: PropTypes.number,
+      image: PropTypes.string,
+    }),
+  ).isRequired,
+};
 
 export default MovieList;
