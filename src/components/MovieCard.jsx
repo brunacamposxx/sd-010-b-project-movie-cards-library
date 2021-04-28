@@ -3,7 +3,7 @@ import React from 'react';
 
 class MovieCard extends Component {
   render() {
-    return <h1>movie card</h1>;
+    return <h1>aleatorio</h1>;
   }
 }
 

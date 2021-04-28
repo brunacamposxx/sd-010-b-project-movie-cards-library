@@ -1,7 +1,7 @@
 // implement MovieList component here
 import React from 'react';
 
-class MovieList extends Component {
+class MovieList extends React.Component {
   render() {
     return <h1>movie list</h1>;
   }
