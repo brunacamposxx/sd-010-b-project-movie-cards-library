@@ -5,9 +5,9 @@ import MovieCard from './MovieCard';
 class MovieList extends Component {
   render() {
     const { movies } = this.props;
-    console.log(movies);
+    const comp = movies.map((mov, index) => <MovieCard key={ index } movie={ mov } />);
     return (
-      <MovieCard />
+      { comp }
     );
   }
 }
