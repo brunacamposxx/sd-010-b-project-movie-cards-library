@@ -1,12 +1,12 @@
 import React from 'react';
 import '../App.css';
-import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
-    console.log(movies); 
+    console.log(movies);
     return (
       <section>
         <MovieCard />
