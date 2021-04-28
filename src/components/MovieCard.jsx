@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
     return (
-      <>
         <h1>Olá Mundo!!!</h1>
-      </>
     );
   }
 }
