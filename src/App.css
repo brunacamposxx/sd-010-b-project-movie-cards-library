@@ -31,6 +31,7 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 450px;
   margin: 5px;
   overflow: hidden;
@@ -45,6 +46,7 @@ body {
 .movie-card-body {
   flex: 1 1 auto;
   padding: 20px;
+
 }
 
 .movie-card-title {
@@ -79,5 +81,10 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
-  padding: 12px 20px;
+  align-items: baseline;
+  /* padding: 12px 20px; */
+}
+
+.rateText {
+  margin: 0% 35%;
 }
