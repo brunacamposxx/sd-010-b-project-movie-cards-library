@@ -1,2 +1,9 @@
-// implement Header component here
-//pedrinho 
+import react from 'react';
+
+class Header extends react.components {
+  render() {
+    return()
+  }
+}
+
+export default Header;
