@@ -13,8 +13,15 @@ class Rating extends Component {
   }
 }
 
+// defaultProps based on encurtador.com.br/ahqIV
+// fiz isso pra tirar o Warning.
+
+Rating.defaultProps = {
+  rating: null,
+};
+
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
 };
 
 export default Rating;
