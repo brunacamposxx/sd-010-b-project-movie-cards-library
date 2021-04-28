@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Header = () => {
-  return (
-    <header>
+const Header = () => 
+(
+  <header>
       <h1>Movie Cards Library</h1>
-    </header>
-  )
-}
+  </header>
+);
 
-export default Header
+export default Header;
