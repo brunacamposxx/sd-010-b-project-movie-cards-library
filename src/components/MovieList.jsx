@@ -9,7 +9,7 @@ class MovieList extends React.Component {
     return (
       <div>
         <MovieCard
-          title={ movies[0].title }
+          titulo={ movies[0].title }
           subtitle={ movies[0].subtitle }
           storyline={ movies[0].storyline }
           rating={ movies[0].rating }
