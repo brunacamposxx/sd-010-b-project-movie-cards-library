@@ -3,14 +3,19 @@ import PropTypes from 'prop-types';
 
 class Rating extends Component {
   render() {
-    return (
-      <div>
-        { this.props.rating }
+    const { rating } = this.props;
 
+    return (
+      <div className="rating ">
+        { rating }
       </div>
     );
   }
 }
+Rating.defaultProps = {
+  rating: 0,
+};
+
 Rating.propTypes = {
   rating: PropTypes.number,
 };

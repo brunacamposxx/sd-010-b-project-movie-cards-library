@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends Component {
@@ -11,11 +11,19 @@ class MovieList extends Component {
       key={ movie.title }
     />));
     return (
-      renderMovieCard
+      <div className="movie-list">
+        {renderMovieCard}
+      </div>
     );
   }
 }
-MovieList.propTypes = {
-  // movies: PropTypes.array,
+
+MovieList.defaultProps = {
+  movies: [],
 };
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf,
+};
+
 export default MovieList;
