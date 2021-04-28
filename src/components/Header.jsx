@@ -1,1 +1,1 @@
-// implement Header component here
+const iniaProjeto = '';
