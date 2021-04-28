@@ -5,10 +5,8 @@ export default class Rating extends React.Component {
     // const { movie } = this.props;
     return (
       <p>
-        {
-        /* Rating 
-        { movie.rating } */
-        }
+        Rating 
+        { movie.rating }
       </p>
     );
   }

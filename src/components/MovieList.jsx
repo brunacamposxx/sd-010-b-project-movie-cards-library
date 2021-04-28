@@ -7,8 +7,9 @@ class MovieList extends React.Component {
     const { movies } = this.props;
     return (
       <section>
-        { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie }/>
-        ) }
+        { 
+        movies.map((movie) => <MovieCard key={ movie.title } movie={ movie }/>)
+        }
       </section>
     );
   }
@@ -22,8 +23,8 @@ MovieList.propTypes = {
       storyline: Proptypes.string,
       imagePath: Proptypes.string,
       rating: Proptypes.number,
-    }).isRequired,
-  ),
+    }),
+  ).isRequired,
 };
 
 export default MovieList;
