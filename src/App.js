@@ -15,6 +15,11 @@ function App() {
 }
 
 export default App;
-
+// Agradecimento a
 // Jefferson A.
 // Mariana Mor.
+// Daniel Roberto
+// Denis Rossati
+// Murillo Wlf
+// Lucas Martins
+// e todas as outras pessoas que eu n me lembro o nome que me ajudaram a entender melhor o react e começar a gostar de utiliza-lo
