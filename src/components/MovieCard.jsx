@@ -26,7 +26,7 @@ import Rating from './Rating';
     id: 3,
     name: 'Fragmentado',
     subtitle: 'Split',
-    description: `Kevin possui 23 personalidades distintas 
+    description: `Kevin possui 23 personalidades distintas
     Um dia, ele sequestra três adolescentes,
     em cativeiro, elas passam a conhecer as diferentes facetas de Kevin.`,
     image: 'https://www.ezimonteiro.com.br/wp-content/uploads/2017/04/split.jpg',
@@ -72,7 +72,7 @@ class MovieCard extends Component {
           <h5 className="movie-card-subtitle">{ subtitle }</h5>
           <p className="movie-card-storyline">{ storyline }</p>
         </div>
-        <Rating rating={ rating } className="movie-card-rating" />
+        <Rating rating={ rating } />
       </div>
     );
   }
