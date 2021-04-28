@@ -31,7 +31,7 @@ MovieCard.propTypes = {
 
 MovieCard.defaultProps = {
   movie: {
-    title: 'teste',
+    title: 'title',
     subtitle: 'subtitle',
     storyline: 'storyline',
     imagePath: 'imagePath',

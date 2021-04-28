@@ -25,7 +25,7 @@ MovieList.propTypes = {
 
 MovieList.defaultProps = {
   movies: {
-    title: 'Movie Title 1',
+    title: 'title',
     subtitle: 'subtitle',
     storyline: 'storyline',
     imagePath: 'imagePath',
