@@ -13,8 +13,4 @@ function App() {
   );
 }
 
-MovieList.propsType = {
-  movies: PropTypes.array.isRequired,
-};
-
 export default App;
