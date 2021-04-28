@@ -5,7 +5,7 @@ class MovieList extends React.Component {
   render() {
     return (
       <ol>
-        <li>MoviaList</li>
+        <li />
       </ol>
     );
   }
