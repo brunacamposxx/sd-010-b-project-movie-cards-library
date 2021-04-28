@@ -10,7 +10,6 @@ body {
   display: flex;
   height: 100px;
   justify-content: center;
-  color: white;
 }
 
 .page-title {
