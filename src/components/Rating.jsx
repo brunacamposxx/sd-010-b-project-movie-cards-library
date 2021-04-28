@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 class Rating extends Component {
   render() {
-    const { rating } = this.props;
+    const { rating, className } = this.props;
     return (
-      <span>{ rating }</span>
+      <span className="rating">{ rating }</span>
     );
   }
 }
