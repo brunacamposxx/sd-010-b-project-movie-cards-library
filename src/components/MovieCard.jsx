@@ -8,16 +8,16 @@ class MovieCard extends React.Component { // REQUISITO 6
     const { title, subtitle, storyline, imagePath, rating } = movie;
 
     return (
-      <section>
-        <div>
+      <section className="movie-card">
+        <div className="movie-card-body">
           {/* REQUISITO 7 */}
-          <img src={ imagePath } alt={ title } />
+          <img className="movie-card-image" src={ imagePath } alt={ title } />
           {/* REQUISITO 8 */}
-          <h4>{ title }</h4>
+          <h4 className="movie-card-title">{ title }</h4>
           {/* REQUISITO 9 */}
-          <h5>{ subtitle }</h5>
+          <h5 className="movie-card-subtitle">{ subtitle }</h5>
           {/* REQUISITO 10 */}
-          <p>{ storyline }</p>
+          <p className="movie-card-storyline">{ storyline }</p>
         </div>
         <div>
           {/* REQUISITO 13 e 14 */}
