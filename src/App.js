@@ -1,15 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
 import './App.css';
-import Cardlist from './components/cardlist';
+import movies from './data';
+import Header from './components/Header';
+import MovieList from './components/MovieList';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Cardlist />
+      <MovieList movies={ movies } />
     </div>
   );
 }
-
-export default App;
