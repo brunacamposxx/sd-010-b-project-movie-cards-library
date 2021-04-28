@@ -15,16 +15,16 @@ class MovieCard extends Component {
       },
     } = this.props;
     return (
-      <section>
+      <section className="movie-card">
         <header>
-          <img style={ { width: '90px' } } src={ imagePath } alt="Movie" />
+          <img className="movie-card-image" src={ imagePath } alt="Movie" />
         </header>
-        <main>
-          <h4>{ title }</h4>
-          <h5>{ subtitle }</h5>
-          <p>{ storyline }</p>
+        <main className="movie-card-body">
+          <h4 className="movie-card-title">{ title }</h4>
+          <h5 className="movie-card-subtitle">{ subtitle }</h5>
+          <p className="movie-card-storyline">{ storyline }</p>
         </main>
-        <footer>
+        <footer className="movie-card-rating">
           <Rating rating={ rating } />
         </footer>
       </section>
