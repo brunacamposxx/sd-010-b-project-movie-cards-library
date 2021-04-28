@@ -14,9 +14,14 @@ class MovieCard extends Component {
         rating,
       },
     } = this.props;
-    console.log(title, subtitle, storyline, imagePath, rating);
+    console.log(rating);
     return (
-      <section />
+      <section>
+        <img src={ imagePath } alt={ title } />
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
+        <p>{ storyline }</p>
+      </section>
     );
   }
 }
