@@ -3,10 +3,11 @@ import React from 'react';
 
 class MovieList extends React.Component {
   render() {
+    const { movies } = this.props
     return (
-      <ul>
-        <MovieList movies={ movies                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             }/>
-      </ul>
+      <div>       
+        <MovieList />
+      </div>
     );
   }
 }
