@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import movies from '../data';
+// import movies from '../data';
 
 class MovieList extends Component {
   render() {
     const { movies } = this.props;
 
     return (
-      <div className = "MovieList">
-        {movies.map((movie, index) => 
+      <div className="MovieList">
+        {movies.map((movies, index) =>
           <MovieCard movie={ movies } key={ movies[index].title } />)}
       </div>
     );
@@ -17,7 +17,7 @@ class MovieList extends Component {
 }
 
 movies.propTypes = {
-  movie: PropTypes.shape({
+  movies: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
