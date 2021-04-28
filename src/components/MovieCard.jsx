@@ -1,23 +1,27 @@
 import React from 'react';
-
+import Proptypes from 'prop-types';
+import Rating from './Rating';
 export default class MovieCard extends React.Component {
   render() {
-    const { movieCardInfo } = this.props;
-    //   title: 'Kingsglaive',
-    //   subtitle: 'Final Fantasy XV',
-    //   storyline: 'King Regis, who oversees the land of Lucis, commands his army of soldiers to protect the kingdom from the Niflheim empire\'s plans to steal the sacred crystal.',
-    //   rating: 4.5,
-    //   imagePath: 'images/Kingsglaive_Final_Fantasy_XV.jpg',
-    
+    const { movie: {title, subtitle, storyline, imagePath} } = this.props;
+
     return (
       <section>
-        <h4>{ movieCardInfo.title }</h4>
-        <h5>{ movieCardInfo.subtitle }</h5>
-        <p>{ movieCardInfo.storyline }</p>
-        <img src= {movieCardInfo.imagePath} alt={movieCardInfo.name}/>
-        <p>{ movieCardInfo.rating }</p>
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
+        <p>{ storyline }</p>
+        <img src={ imagePath } alt={ title } />
+        <Rating />
       </section>
-
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: Proptypes.shape({
+   title: Proptypes.string,
+   subtitle: Proptypes.string,
+   storyline: Proptypes.string,
+   imagePath: Proptypes.string
+  }).isRequired,
+};
