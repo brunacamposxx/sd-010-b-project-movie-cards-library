@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      <Header />
-      <MovieList movies = { movies }/>
+        <Header />
+        <MovieList movies={ movies } />
       </div>
     );
   }
