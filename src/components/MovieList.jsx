@@ -9,14 +9,14 @@ class MovieList extends Component {
     return (
       <div>
         {movies.map((movieObject) => (
-          <MovieCard key={ movieObject.key } movie={ movieObject } />
+          <MovieCard key={ movieObject.title } movie={ movieObject } />
         ))}
       </div>
     );
   }
 }
 
-//  https://reactjs.org/docs/typechecking-with-proptypes.html
+// **SOURCE** https://reactjs.org/docs/typechecking-with-proptypes.html
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
