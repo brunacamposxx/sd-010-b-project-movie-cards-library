@@ -1,9 +1,9 @@
-// implement MovieCard component here
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+// import Movielist from './components/Movielist'
 
-class MovieCard extends Component {
-  render() {
-    return <div></div>;
-  }
-}
-export default MovieCard;
+// class MovieCard extends Component {
+//   render() {
+//     return <li>'oi'</li>;
+//   }
+// }
+// export default MovieCard;
