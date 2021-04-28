@@ -2,7 +2,9 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    return null;
+    return (
+      <header><h1>Movie Cards Library</h1></header>
+    );
   }
 }
 
