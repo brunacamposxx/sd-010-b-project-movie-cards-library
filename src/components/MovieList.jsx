@@ -12,6 +12,7 @@ class MovieList extends Component {
     />));
     return (
       <div className="movie-list">
+
         {renderMovieCard}
       </div>
     );
