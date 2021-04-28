@@ -13,7 +13,7 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
-  rating: rating.number.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default Rating;
