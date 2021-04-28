@@ -4,29 +4,29 @@ import movies from '../data';
 // import Rating from './Rating';
 
 class MovieCard extends React.Component {
-  render () {
+  render() {
     const { movie } = this.props;
 
-    return (      
-      <div className='MovieCard'>
-        <img src = {movie.imagePath} />
-        <h4>{movie.title}</h4>
-        <h5>{movie.subtitle}</h5>
-        <p>{movie.storyline}</p>
+    return (
+      <div className = "MovieCard">
+        <img src = { movie.imagePath } alt = {`${movie.title}`} />
+        <h4>{ movie.title }</h4>
+        <h5>{ movie.subtitle }</h5>
+        <p>{ movie.storyline }</p>
         {/* <h5>{ Rating }</h5> */}
-      </div> 
+      </div>
     );
   }
 }
 
 movies.propTypes = {
-  movies: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     imagePath: PropTypes.string,
     rating: PropTypes.number,
-  }).isRequired,  
+  }).isRequired,
 };
 
 export default MovieCard;
