@@ -1,1 +1,31 @@
-// implement MovieCard component here
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Rating from './Rating';
+
+class MovieCards extends Component {
+  render() {
+    const { title, subtitle, storyline, imagePath, rating } = this.props.movies;
+
+    return (
+      <div className='moviecard'>
+        <div>
+          <img src={imagePath} alt={`${title}`} />
+          <h4>{title}</h4>
+          <h5>{subtitle}</h5>
+          <p>{storyline}</p>
+          <h5>{Rating}</h5>
+        </div>
+      </div>
+    );
+  };
+};
+
+MovieCards.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  storyline: PropTypes.string.isRequired,
+  imagePath: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired
+}
+
+export default MovieCards;
