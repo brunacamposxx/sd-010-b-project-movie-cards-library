@@ -40,8 +40,7 @@ body {
 }
 
 .movie-card:hover {
-  box-shadow: -px 6px 10px 5px rgba(0, 0, 0, 0.568);
-
+  box-shadow: -6px 6px 10px 5px rgba(0, 0, 0, 0.568);
 }
 
 
