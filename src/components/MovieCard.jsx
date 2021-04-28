@@ -1,9 +1,8 @@
-// implement MovieCard component here
 import React from 'react';
 
-class MovieCard extends Component {
+class MovieCard extends React.Component {
   render() {
-    return <h1>aleatorio</h1>;
+    return <h1>asdf</h1>;
   }
 }
 
