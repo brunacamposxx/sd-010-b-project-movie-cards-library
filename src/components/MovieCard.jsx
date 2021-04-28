@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    const { movie: { title, imagePath, subtitle, storyline } } = this.props;
+    const { movie: { title, imagePath, subtitle, storyline, rating } } = this.props;
     return (
       <div className="movie-card">
         <img src={ imagePath } alt="title" className="movie-card-image" />
@@ -12,6 +13,7 @@ class MovieCard extends React.Component {
           <h5 className="movie-card-subtitle">{ subtitle }</h5>
           <p className="movie-card-storyline">{ storyline }</p>
         </div>
+        <Rating rating={ rating } />
       </div>
     );
   }
@@ -23,6 +25,7 @@ MovieCard.propTypes = {
     imagePath: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
   }).isRequired,
 };
 
