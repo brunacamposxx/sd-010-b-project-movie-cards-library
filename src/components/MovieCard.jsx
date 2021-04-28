@@ -15,6 +15,7 @@ class MovieCard extends Component {
           <p className="movie-card-storyline ">{storyline}</p>
         </div>
         <div className="movie-card-rating">
+          <span>Rating:</span>
           <Rating rating={ rating } />
         </div>
       </div>
