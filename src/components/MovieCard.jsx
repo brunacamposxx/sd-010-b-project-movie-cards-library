@@ -3,8 +3,9 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
+    const { MovieInfo: { title } } = this.props;
     return (
-      <h1>Texto teste</h1>
+      <h1>{ title }</h1>
     );
   }
 }
