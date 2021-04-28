@@ -5,9 +5,7 @@ class Cardlist extends React.Component {
   render() {
     return (
       <div>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card />
       </div>
     );
   }
