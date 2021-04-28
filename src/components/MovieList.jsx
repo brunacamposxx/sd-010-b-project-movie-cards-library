@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 
 class MovieList extends Component {
   render() {
-    const arrayMovies = this.props.movies;
+    const { movies } = this.props;
     return (
-      <h1>TESTE!</h1>
-    )
+      <h1>{ movies }</h1>
+    );
   }
 }
 
 MovieList.propTypes = {
-  arrayMovies: PropTypes.array.isRequired,
-}
+  movies: PropTypes.arrayOf.isRequired,
+};
 
 export default MovieList;
