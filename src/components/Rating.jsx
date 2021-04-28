@@ -6,7 +6,7 @@ class Rating extends React.Component { // REQUISITO 12 - Prop e Elemento <p> REQ
     const { rating } = this.props;
     return (
       <section>
-        <p>{ rating }</p>
+        <p className="rating">{ rating }</p>
       </section>
     );
   }
