@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
-    const movieRate = this.props.rating;
+    
     return (
       <div className="rating">
-        { movieRate }
+        { this.props.rating }
       </div>
     );
   }
