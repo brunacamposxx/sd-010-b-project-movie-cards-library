@@ -13,9 +13,9 @@ class MovieList extends React.Component {
       </section>
     );
   }
-  movies.propTypes = {
-    title: PropTypes.string,
-  };
 }
+MovieList.propTypes = {
+  title: PropTypes.string.isRequired
+};
 
 export default MovieList;
