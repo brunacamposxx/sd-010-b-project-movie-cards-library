@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
-    const { movies: { rating } } = this.props;
+    const { rating } = this.props;
     return (
-      <div>
+      <div className="rating">
         { rating }
       </div>
     );
@@ -13,7 +13,7 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
-  movies: PropTypes.arrayOf(
+  rating: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       imagePath: PropTypes.string,
