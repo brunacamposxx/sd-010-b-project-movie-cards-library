@@ -7,15 +7,14 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     return (
-      <div>
-        <MovieCard
-          title={ movies[0].title }
-          subtitle={ movies[0].subtitle }
-          storyline={ movies[0].storyline }
-          rating={ movies[0].rating }
-          img={ movies[0].imagePath }
-        />
-      </div>
+      movies.map((movie) => (
+        <MovieCard title={ movie.title } 
+        subtitle={ movie.subtitle } 
+        storyline={ movie.storyline }
+        rating={ movie.rating }
+        rating={ movie.rating }
+        imagePath={ movie.imagePath }/>
+      ))
     );
   }
 }
