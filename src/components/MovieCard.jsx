@@ -21,6 +21,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
+// O exact significa que o meu objeto tem apenas essas propriedades(chaves) listadas, não permitindo props extras.
   movie: PropTypes.exact({
     title: PropTypes.string,
     subtitle: PropTypes.string,
