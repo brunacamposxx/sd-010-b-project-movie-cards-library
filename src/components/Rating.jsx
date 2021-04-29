@@ -18,3 +18,5 @@ Rating.propTypes = {
 };
 
 export default Rating;
+
+// Projeto feito em parceria com Paulo Xavier
