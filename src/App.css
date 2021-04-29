@@ -34,8 +34,8 @@ body {
   height: 450px;
   margin: 10px;
   overflow: hidden;
-  width: 300px;
   box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.568);
+  width: 300px;
   transition: 0.3s;
 }
 
