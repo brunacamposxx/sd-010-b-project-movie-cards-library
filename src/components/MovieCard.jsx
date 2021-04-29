@@ -5,7 +5,7 @@ import '../App.css';
 
 class MovieCard extends React.Component {
   render() {
-    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
+    const { movie: { title, imagePath } } = this.props;
     return (
       <div className="movie-card">
         <div className="movie-card-body">
