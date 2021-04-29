@@ -4,7 +4,8 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    return <li />;
+    const title = this.props.title;
+    return <li>{title}</li>;
   }
 }
 
