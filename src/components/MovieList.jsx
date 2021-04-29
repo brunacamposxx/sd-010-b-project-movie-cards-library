@@ -15,6 +15,7 @@ class MovieList extends React.Component {
     );
   }
 }
+
 // Descobri que PropTypes.array não funciona
 // então achei essa discução no github arreseito do arrayOf:  https://github.com/facebook/prop-types/issues/212
 MovieList.propTypes = {
