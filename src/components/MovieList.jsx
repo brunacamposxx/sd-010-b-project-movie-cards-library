@@ -5,11 +5,12 @@ import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
+    <MovieCard />
     const { movies } = this.props;
     console.log(movies);
     return (
       <section>
-        <MovieCard />
+        <p>aaaa</p>
       </section>
     );
   }
