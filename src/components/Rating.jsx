@@ -5,6 +5,7 @@ import '../App.css';
 class Rating extends React.Component {
   render() {
     const { rating } = this.props;
+
     return (
       <div>
         <span className="rating">{rating}</span>
@@ -13,7 +14,7 @@ class Rating extends React.Component {
   }
 }
 
-Rating.propsTypes = {
+Rating.propTypes = {
   rating: PropTypes.number.isRequired,
 };
 
