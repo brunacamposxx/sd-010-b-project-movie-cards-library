@@ -5,7 +5,7 @@ class Rating extends React.Component {
   render() {
     const { rating } = this.props;// a class é Rating e a prop é rating(aquilo que tá na prop movie no MovieCard)
     return (
-      <div>{ rating }</div>
+      <div className="rating">{ rating }</div>
     );
   }
 }

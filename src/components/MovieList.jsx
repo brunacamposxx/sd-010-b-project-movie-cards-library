@@ -7,7 +7,7 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;// faço isso pq esse movies é a prop de MovieList lá no App.js. Essa prop recebe o array de objetos que tem lá no data.js
     return (
-      movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />)) // A prop movies recebe o array de objetos que tá em data.js. Cada objeto do array em data.js será um "movie". Cada um desse movie vai ter um MovieCard com uma chave tendo o nome desse movie. E cada um desses "movie" vai ter a prop movie, que eu vou elaborar em MovieCard e também em Rating.
+      movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />)) // A prop movies recebe o array de objetos que tá em data.js. Cada objeto do array em data.js será um "movie". Cada um desse movie vai ter um MovieCard com uma chave tendo o nome desse movie. E aí esse MovieCard que está em cada um desses "movie" vai ter uma PROP também chamada movie(em verde). Irei elaborar essa prop movie(em verde) no MovieCard e também em Rating.
     );
   }
 }
