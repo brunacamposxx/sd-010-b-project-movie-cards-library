@@ -1,12 +1,12 @@
 // implement MovieCard component here
 import React from 'react';
 
-class MovieCard extends React.Component{
+class MovieCard extends React.Component {
   render() {
-    return(
+    return (
       <ul>filmes</ul>
     );
   }
 }
 
-export default MovieCard
+export default MovieCard;
