@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
@@ -15,5 +14,18 @@ class MovieList extends React.Component {
     );
   }
 }
+
+// PropTypes: tipagem das props do componente
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      storyline: PropTypes.string,
+      imagePath: PropTypes.string,
+      rating: PropTypes.string,
+    }),
+  ).isRequired,
+};
 
 export default MovieList;

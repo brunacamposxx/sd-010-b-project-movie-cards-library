@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
@@ -11,5 +12,12 @@ class Rating extends React.Component {
     );
   }
 }
+
+// PropTypes: tipagem das props do componente
+Rating.propTypes = {
+  rating: PropTypes.shape({
+    rating: PropTypes.string,
+  }).isRequired,
+};
 
 export default Rating;
