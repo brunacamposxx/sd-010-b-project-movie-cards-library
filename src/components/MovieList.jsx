@@ -1,6 +1,6 @@
 // alguns detalhes sobre essa parte de proptype eu consegui entender a resolução graças ao meu colega de turma Matheus Carreta. Link do PR dele: https://github.com/tryber/sd-010-b-project-movie-cards-library/pull/98/commits
 import React from 'react';
-import PropTypes from 'prop-types';// tem que fazer isso também.
+import PropTypes from 'prop-types'; // tem que fazer isso também. 'prop-types' é a biblioteca.
 import MovieCard from './MovieCard';// Como uso o MovieCard ali no map, tenho que importar aqui e exportar o MovieCard lá no próprio MovieCard.
 
 class MovieList extends React.Component {
