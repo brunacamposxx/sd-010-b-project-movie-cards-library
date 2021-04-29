@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgba(124, 44, 44, 0.125);
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -21,20 +21,26 @@ body {
 
 .movie-list {
   display: flex;
-  flex-flow: row wrap;
-  padding: 48px 30px;
+  flex-flow: row wrap; /* padding: 48px 30px; */
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .movie-card {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border: 1px solid rgba(161, 13, 13, 0.125);
+  border-radius: 25px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 450px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
+}
+
+.movie-card:hover {
+  box-shadow: 6px 6px 7px rgb(129, 121, 121);
 }
 
 
@@ -79,5 +85,6 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
-  padding: 12px 20px;
+  padding: 2px 12px;
 }
+
