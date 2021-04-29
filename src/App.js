@@ -12,7 +12,7 @@ function App() {
       Hora de codar, D.S! 🚀✍️👨‍💻👩‍💻💪
       <Header />
       <MovieCard />
-      <MovieList />
+      <MovieList movies={ movies } />
       <Rating />
     </div>
   );
