@@ -6,12 +6,12 @@ import movies from './data';
 
 function App() {
   return (
-    <body>
+    <>
       <Header />
       <div className="movie-list">
         <MovieList movies={ movies } />
       </div>
-    </body>
+    </>
   );
 }
 
