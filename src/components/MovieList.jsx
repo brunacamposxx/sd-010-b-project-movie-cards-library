@@ -12,8 +12,8 @@ class MovieList extends React.Component {
     />));
 
     return (
-      <div className="App">
-        { renderMovieCards }
+      <div className="movie-list">
+        {renderMovieCards}
       </div>
     );
   }
@@ -24,7 +24,15 @@ MovieList.defaultProps = {
 };
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf,
+  movies: PropTypes.arrayOf({
+    movie: PropTypes.shape({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      storyline: PropTypes.string,
+      rating: PropTypes.number,
+      imagePath: PropTypes.string,
+    }),
+  }),
 };
 
 export default MovieList;
