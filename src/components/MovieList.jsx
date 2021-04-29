@@ -6,17 +6,17 @@ import '../App.css';
 
 class MovieList extends React.Component {
   render() {
-    const { movie } = this.props;
+    const { movies } = this.props;
     return (
       <main>
         <section className="movie-list">
-          {movie.map((mov) => <MovieCard movie={ mov } key={ mov.title } />)}
+          {movies.map((mov) => <MovieCard movie={ mov } key={ mov.title } />)}
         </section>
       </main>);
   }
 }
 MovieList.propTypes = {
-  movie: PropTypes.arrayOf(
+  movies: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
