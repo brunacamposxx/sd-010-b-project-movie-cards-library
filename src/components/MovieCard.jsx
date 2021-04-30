@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class MovieCard extends React.Component {
     return (
       <div>
         <section>
-          <img src={ imagePath } alt={ title }/>
+          <img src={ imagePath } alt={ title } />
           <h4>{ title }</h4>
           <h5>{ subtitle }</h5>
           <p>{ storyline }</p>
@@ -19,5 +20,17 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }).isRequired,
+};
+
+// Entendendo melhor as validações das props com a ajuda do meu colega Walter Freitas, e dando uma olhada no seu PR. src: https://github.com/tryber/sd-010-b-project-movie-cards-library/pull/105
 
 export default MovieCard;
