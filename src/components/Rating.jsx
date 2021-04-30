@@ -12,7 +12,7 @@ class Rating extends React.Component {
   }
 }
 
-Rating.propTypes = {
+Rating.PropTypes = {
   rating: PropTypes.number.isRequired,
 };
 
