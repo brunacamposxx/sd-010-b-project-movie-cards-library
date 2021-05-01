@@ -2,9 +2,8 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    const text = 'Hello World, Welcome React';
     return (
-      <h1>{text}</h1>
+      <h1>Movie Cards Library</h1>
     );
   }
 }
