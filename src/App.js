@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import MovieCard from './components/MovieCard';
+import Rating from './components/Rating';
 import './App.css';
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
         <Header />
         <MovieList />
         <MovieCard />
+        <Rating />
       </div>
     );
   }
