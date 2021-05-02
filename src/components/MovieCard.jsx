@@ -13,7 +13,9 @@ class MovieCard extends React.Component {
           <h5>{ subtitle }</h5>
           <p>{ storyline }</p>
         </div>
-        <Rating rating={ rating } />
+        <div>
+          <Rating rating={ rating } />
+        </div>
       </section>
     );
   }
