@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import Top from './components/BackTop';
-import Footer from './components/Footer';
+import Top from './BackTop';
+import Footer from './Footer';
 import movies from './data';
 import './App.css';
 
