@@ -8,42 +8,54 @@ body {
   align-items: center;
   background-color: #343a40;
   display: flex;
-  height: 100px;
+  flex-direction: column;
+  height: 100vh;
   justify-content: center;
+}
+
+.nav-link a {
+  color: rgba(98, 184, 255, 0.89);
+  font-size: 2em;
+  text-decoration: none;
 }
 
 .page-title {
   color: #f8f9fa;
-  font-size: 28px;
+  font-size: 38px;
   font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
+  height: 100vh;
+  justify-content: center;
+  margin: 48px auto;
+  width: 90%;
 }
 
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 0.25em;
   display: flex;
   flex-direction: column;
-  height: 450px;
   margin: 5px;
+  max-height: 500px;
+  min-height: 450px;
   overflow: hidden;
-  width: 300px;
+  width: 350px;
 }
 
-
 .movie-card-image {
+  border-radius: 0.25em;
   width: 100%;
 }
 
 .movie-card-body {
-  flex: 1 1 auto;
+  flex: 1 1 1;
   padding: 20px;
 }
 
@@ -51,6 +63,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
+  text-align: center;
 }
 
 .movie-card-subtitle {
@@ -58,20 +71,24 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
+  text-align: center;
 }
 
 .movie-card-storyline {
   font-size: 14px;
+  height: 30%;
   text-align: justify;
 }
 
 .rating {
   background-color: #007bff;
-  border-radius: 25px;
+  border-radius: 0.25em;
   color: white;
   font-size: 16px;
   font-weight: 700;
+  min-width: 25px;
   padding: 3px 9px;
+  text-align: center;
 }
 
 .movie-card-rating {
@@ -79,5 +96,44 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
-  padding: 12px 20px;
+  padding: 4px 10px;
+}
+
+.footer {
+  align-items: center;
+  background-color: #343a40;
+  border-radius: 0.25em 0.25em 0 0;
+  color: whitesmoke;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.link-to-top {
+  font-size: 25px;
+  text-align: center;
+}
+
+.link-to-top a {
+  color: rgba(255, 115, 0, 0.726);
+}
+
+.footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.link-to-top a:hover {
+  color: rgba(255, 30, 0, 0.897);
+}
+
+.nav-link a:hover {
+  color: rgba(255, 115, 0, 0.726);
+}
+
+.footer a:hover {
+  color: rgba(98, 184, 255, 0.89);
+  text-decoration: none;
 }
