@@ -13,10 +13,7 @@ class MovieList extends React.Component {
       <main>
         {
           movies.map(
-            (movie) => {
-              console.table(movie);
-              return <div key={ movie.title }>{movie}</div>;
-            },
+            (movie) => <div key={ movie.title }>{movie.title}</div>,
           )
         }
       </main>
