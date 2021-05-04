@@ -1,6 +1,7 @@
 // implement MovieList component here
 import React from 'react';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   // constructor(props) { // recebe props como parâmetro
@@ -13,7 +14,7 @@ class MovieList extends React.Component {
       <main>
         {
           movies.map(
-            (movie) => <div key={ movie.title }>{movie.title}</div>,
+            (movie) => <MovieCard key={ movie.title } movie={ movie } />,
           )
         }
       </main>
