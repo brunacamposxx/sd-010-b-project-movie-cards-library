@@ -17,4 +17,4 @@ Rating.propTypes = {
   rating: PropTypes.number.isRequired
 }
 
-export default Rating
+export default Rating;
