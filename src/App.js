@@ -3,15 +3,14 @@ import Header from './components/Header';
 import MovieList from './components/MovieList';
 import movies from './data';
 
-// import Header from './components/Header';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header className="page-title" />
       <div id="body" className="movie-list">
-        <MovieList movie={ movies } />
+        <MovieList className="movie-list" movies={ movies } />
       </div>
     </div>
   );
