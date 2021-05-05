@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
+import '../App.css';
 
 class MovieCard extends React.Component {
   render() {
@@ -25,13 +26,16 @@ class MovieCard extends React.Component {
   }
 }
 
+// Nessa parte eu não consegui sozinho e assim, ao consultar o repositório de um amigo, consegui ver o que precisava ser feito e também consegui uma fonte de pesqisa
+// Fonte: https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
+
 MovieCard.propTypes = {
   movie: PropTypes.shape({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-    imagePath: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    imagePath: PropTypes.string.isRequired,
   }).isRequired,
 };
 
