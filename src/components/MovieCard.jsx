@@ -11,13 +11,13 @@ class MovieC extends React.Component {
         <h4>{ movie.title }</h4>
         <h5>{ movie.subtitle }</h5>
         <p>{ movie.storyline }</p>
-        <img src={ movie.imagePath } alt="Imagen de filme"/>
+        <img src={ movie.imagePath } alt="Imagen de filme" />
         <Rating rating={ movie.rating } />
       </div>
     );
   }
 }
-  
+
 MovieC.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
@@ -25,7 +25,7 @@ MovieC.propTypes = {
     storyline: PropTypes.string,
     imagePath: PropTypes.string,
     rating: PropTypes.number,
-  }).isRequired
+  }).isRequired,
 };
 
 export default MovieC;
