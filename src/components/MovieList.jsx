@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // Instalando proptypes com : npm i --save prop-type
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
+import '../App.css';
 
 class MovieList extends Component {
   render() {
@@ -11,7 +12,12 @@ class MovieList extends Component {
     // 2. fazendo o map para capturar cada elemento de movies
     // 3. passando para MovieCard element.title como key e element(que seria cada filme) como movie
     return (
-      movies.map((element) => <MovieCard key={ element.title } movie={ element } />));
+      <div className="movie-list">
+        {movies.map((element) => (
+          <MovieCard key={ element.title } movie={ element } />
+        ))}
+      </div>
+    );
   }
 }
 // PropType forma 1

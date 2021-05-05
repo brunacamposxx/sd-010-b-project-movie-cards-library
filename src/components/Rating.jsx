@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 
 class Rating extends Component {
   render() {
@@ -8,9 +9,9 @@ class Rating extends Component {
 
     // 2. renderizando ratind no span
     return (
-      <div>
-        Rating:
-        <span className="rating">{rating}</span>
+      <div className="movie-card-rating">
+        Rating :
+        <div className="rating">{rating}</div>
       </div>
     );
   }
