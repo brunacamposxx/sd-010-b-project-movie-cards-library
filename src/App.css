@@ -1,7 +1,86 @@
 body {
-  background-color: whitesmoke;
+  background-color: #7f8f9e;
   box-sizing: border-box;
   font-size: 16px;
+}
+
+button {
+  background-color: rgb(76, 146, 5);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #f8f9fa;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  margin: auto;
+  width: 60px;
+}
+
+button:hover {
+  background-color: #f8f9fa;
+  border: 1px solid rgb(76, 146, 5);
+  color: rgb(76, 146, 5);
+}
+
+.planoNegocios {
+  background-color: azure;
+  text-align: center;
+  display: none;
+  height: 1000px;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.DollarRotate {
+  -webkit-animation: rodaroda 5s linear alternate 3;
+  /* -moz-animation: rodaroda 5s linear infinite;
+  -ms-animation: rodaroda 5s linear infinite;
+  -o-animation: rodaroda 5s linear infinite; */
+  animation: rodaroda 5s linear infinite;
+  position: relative;
+}
+
+@-webkit-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+@-moz-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+@-ms-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+@-o-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+@keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+.img-logo {
+  width: 50px;
+}
+
+.img-logo:hover {
+  cursor: pointer;
+  transition: 1s;
+  width: 60px;
 }
 
 .movie-card-header {
@@ -9,7 +88,25 @@ body {
   background-color: #343a40;
   display: flex;
   height: 100px;
-  justify-content: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+}
+
+.img-lupa {
+  width: 35px;
+}
+
+.navBarItems {
+  color: #95a8b9;
+  font-size: 20px;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.navBarItems:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .page-title {
@@ -19,27 +116,36 @@ body {
   text-align: center;
 }
 
+.logo-title {
+  color: #b4b4b4;
+}
+
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
   padding: 48px 30px;
+  width: 80%;
 }
 
 .movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgb(58, 58, 58);
+  border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   height: 450px;
   margin: 5px;
+  margin-top: 80px;
   overflow: hidden;
   width: 300px;
 }
 
-
 .movie-card-image {
-  width: 100%;
+  border: 0.5px solid white;
+  height: 167.734px;
+  width: 99.1%;
 }
 
 .movie-card-body {
@@ -48,19 +154,21 @@ body {
 }
 
 .movie-card-title {
+  color: white;
   font-size: 24px;
   font-weight: 500;
-  margin: 0 0 12px;
+  margin: 10px 0 12px;
 }
 
 .movie-card-subtitle {
-  color: #6c757d;
+  color: #97a3ad;
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
 }
 
 .movie-card-storyline {
+  color: white;
   font-size: 14px;
   text-align: justify;
 }
@@ -80,4 +188,21 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.footer-container {
+  background-color: #343a40;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icons-footer {
+  margin: 30px 15px;
+  width: 50px;
+}
+
+.icons-footer:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }

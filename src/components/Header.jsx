@@ -7,7 +7,14 @@ class Header extends React.Component {
   render() {
     return (
       <header className="movie-card-header">
-        <h1 className="page-title">Movie Cards Library</h1>
+        <img className="img-logo" src="images/computador-portatil.png" alt="controle" />
+        <h1 className="page-title">
+          Games
+          <span className="logo-title">Center</span>
+        </h1>
+        <ul className="navBar">
+          <li className="navBarItems">$Plano</li>
+        </ul>
       </header>
     );
   }
