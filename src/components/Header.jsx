@@ -4,10 +4,13 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     return (
-      React.createElement('header', null,
-        React.createElement('h1', null, 'Movie Cards Library'))
+      React.createElement('header', {
+        className: 'movie-card-header',
+      },
+      React.createElement('h1', {
+        className: 'page-title',
+      }, 'Movie Cards Library'))
     );
   }
 }
-
 export default Header;
