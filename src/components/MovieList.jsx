@@ -1,4 +1,3 @@
-// implement MovieList component here
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
@@ -10,12 +9,7 @@ class MovieList extends Component {
       <div className="movie-list">
         {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
       </div>
-      // React.createElement("div", {
-      //   className: "movie-list"
-      // }, movies.map(movie => React.createElement(MovieCard, {
-      //   movie: movie,
-      //   key: movie.title
-      // })));
+
     );
   }
 }
