@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import movies from './data';
+import MovieList from './components/MovieList';
 
 class App extends React.Component {
   render() {
     return (
-      <main>
+      <div className="App">
         <Header />
-      </main>
+        <MovieList movies={ movies } />
+      </div>
     );
   }
 }
