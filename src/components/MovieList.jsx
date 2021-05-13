@@ -6,8 +6,13 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <section>
-        {movies.map((eachMovie, index) => <MovieCard movie={eachMovie} key={`Movie Title ${index + 1}`} />)}
+      <section className="movie-list">
+        {movies.map((eachMovie, index) => (<MovieCard
+          movie={ eachMovie }
+          key={
+            `Movie Title ${index + 1}`
+          }
+        />))}
       </section>
     );
   }
@@ -21,7 +26,7 @@ MovieList.propTypes = {
       storyline: PropTypes.string,
       rating: PropTypes.number,
       imagePath: PropTypes.string,
-    })    
+    }),
   ),
 };
 
