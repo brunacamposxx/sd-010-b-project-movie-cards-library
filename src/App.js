@@ -5,9 +5,11 @@ import MovieList from './components/MovieList';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <MovieList />
     </div>
   );
 }
+
+App();
