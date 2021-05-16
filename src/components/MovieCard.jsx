@@ -4,7 +4,9 @@ import movies from '../data';
 class MovieCard extends React.Component {
   render() {
     return (
-      <span> { movies } </span>
+      <span>
+        { movies }
+      </span>
     )
   }
 }
