@@ -9,5 +9,5 @@ class MovieCard extends React.Component {
   }
 }
 
-import default MovieCard;
+export default MovieCard;
 // implement MovieCard component here
