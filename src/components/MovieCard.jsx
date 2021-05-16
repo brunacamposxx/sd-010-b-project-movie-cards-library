@@ -7,7 +7,7 @@ class MovieCard extends React.Component {
       <span>
         { movies }
       </span>
-    )
+    );
   }
 }
 
