@@ -5,12 +5,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-        <div id="body" className="movie-list">
-          <MovieList movies={ movies } />
-        </div>
-    </div>
+  <div className="App">
+    <Header />
+      <div id="body" className="movie-list">
+        <MovieList movies={ movies } />
+      </div>
+  </div>
   );
 }
 
