@@ -12,3 +12,5 @@ function App() {
     </div>
   );
 }
+
+App();
