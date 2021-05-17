@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   padding: 48px 30px;
+  justify-content: center;
 }
 
 .movie-card {
@@ -72,6 +73,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   padding: 3px 9px;
+  margin: auto;
 }
 
 .movie-card-rating {
